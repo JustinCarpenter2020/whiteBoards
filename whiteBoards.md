@@ -261,8 +261,8 @@ ___
 <br>
 
 ### It's High Nooooon: 
-given and array of 3 numbers add them together until you reach 100 or greater, return how many full iterations of the array it took to reach 100
->EXAMPLE INPUT: ".........Bang", ".......Bang" <o>// outputs: "cowboy 2 shot first"</o>  
+Given two strings both representing cowboys, return which cowboy shot first. This is represented by the "B". Cowboy 1 will ALWAYS be string1 and cowboy 2 will ALWAYS be string 2.
+>EXAMPLE INPUT: ".........Bang..", ".......Bang" <o>// outputs: "cowboy 2 shot first"</o>  
 
 
 <details>
@@ -270,12 +270,9 @@ given and array of 3 numbers add them together until you reach 100 or greater, r
 
 ```js
 function noonDraw(str1, str2) {
-  let long = str1
-  let short = str2
-  str1.length > str2.length ? true : short = str1, long = str2
-  for (let i = 0; i < long.length; i++) {
-    if (long[i] != short[i]) {
-      if (long[i] == 'B') {
+  for (let i = 0; i < str1.length; i++) {
+    if (str1[i] != str2[i]) {
+      if (str1[i] == 'B') {
         return console.log("Bang Result ", "cowboy 1 shot first")
       }
       return console.log("Bang Result ", "cowboy 2 shot first")
