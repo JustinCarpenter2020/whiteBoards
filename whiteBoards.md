@@ -369,7 +369,7 @@ function median(arr1, arr2){
 #### Notes:
 
 ```
-Formula to find median with even array length = middle letters added together and divided by two
+Formula to find median (with even array length) = middle numbers added together and divided by two
 ex: (2 + 3)/2
 ```
 
