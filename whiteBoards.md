@@ -181,30 +181,27 @@ function isSpyEasy(str) {
   let y = false
   for (let i = 0; i < person.length; i++) {
     let char = person[i]
-    if (char = "s") {
+    if (char == "s") {
       s = true
-    } else if (char = "p") {
+    } else if (char == "p") {
       p = true
-    } else if (char = 'y') {
+    } else if (char == 'y') {
       y = true
     }
-    return console.log("Is Spy Easy Result", (s && p && y))
   }
+    return  s && p && y
 }
 
 ```
 
 ```js
-function isSpy(arr) {
-  let spys = []
-  for (let i = 0; i < arr.length; i++) {
-    let person = arr[i].toLowerCase()
+function isSpy(str) {
+
+    let person = str.toLowerCase()
     let s = person.includes('s')
     let p = person.includes('p')
     let y = person.includes('y')
-    spys.push(s && p && y)
-  }
-  return console.log("Is Spy Result", spys)
+  return s && p && y
 }
 ```
 </details>
